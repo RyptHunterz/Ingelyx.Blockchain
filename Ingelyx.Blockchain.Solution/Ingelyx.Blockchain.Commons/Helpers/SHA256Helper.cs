@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace Ingelyx.Blockchain.Commons.Helper
+namespace Ingelyx.Blockchain.Commons.Helpers
 {
     public class SHA256Helper
     {

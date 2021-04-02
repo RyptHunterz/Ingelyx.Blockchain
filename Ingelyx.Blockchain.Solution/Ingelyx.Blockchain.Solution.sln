@@ -1,11 +1,14 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingelyx.Blockchain.Models", "Ingelyx.Blockchain.Models\Ingelyx.Blockchain.Models.csproj", "{0252E4D7-79AB-4955-99AC-4E13D7F1B2D4}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ingelyx.Blockchain.Models", "Ingelyx.Blockchain.Models\Ingelyx.Blockchain.Models.csproj", "{0252E4D7-79AB-4955-99AC-4E13D7F1B2D4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ingelyx.Blockchain.Websites", "Ingelyx.Blockchain.Websites", "{7F8FFAA7-EEE4-4279-8619-BD5B333B2A81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingelyx.Blockchain.Commons", "Ingelyx.Blockchain.Commons\Ingelyx.Blockchain.Commons.csproj", "{6A6CD663-EAB8-453F-A9B5-1CAD053CD549}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ingelyx.Blockchain.Commons", "Ingelyx.Blockchain.Commons\Ingelyx.Blockchain.Commons.csproj", "{6A6CD663-EAB8-453F-A9B5-1CAD053CD549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{070975D6-25DA-49E4-AF5F-FAB2BAAC7D4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,5 +24,15 @@ Global
 		{6A6CD663-EAB8-453F-A9B5-1CAD053CD549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A6CD663-EAB8-453F-A9B5-1CAD053CD549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A6CD663-EAB8-453F-A9B5-1CAD053CD549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{070975D6-25DA-49E4-AF5F-FAB2BAAC7D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070975D6-25DA-49E4-AF5F-FAB2BAAC7D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070975D6-25DA-49E4-AF5F-FAB2BAAC7D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070975D6-25DA-49E4-AF5F-FAB2BAAC7D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2A9974A-C30F-4E60-8D6F-228494190E37}
 	EndGlobalSection
 EndGlobal

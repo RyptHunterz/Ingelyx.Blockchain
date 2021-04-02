@@ -1,32 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
-using Ingelyx.Blockchain.Commons.Helper;
 
 namespace Ingelyx.Blockchain.Models
 {
+    using Ingelyx.Blockchain.Commons.Helpers;
+
     public class Block
     {
         public Guid Index { get; set; }
         public string PreviousHash { get; set; }
         public DateTime Timestamp { get; set; }
-        public List<Transaction> Data { get; set; }
+        public Transaction[] Data { get; set; }
         public string Hash { get; set; }
 
-        public Block(Guid index, string previousHash, DateTime timestamp, List<Transaction> data, string hash)
+        public Block(Guid index, string previousHash, DateTime timestamp, Transaction[] data)
         {
             this.Index = index;
             this.PreviousHash = previousHash;
             this.Timestamp = timestamp;
             this.Data = data;
-            this.Hash = hash;
+            this.Hash = calculateHash(index, previousHash, timestamp, data);
         }
 
-        public string calculateHash(Guid index, string previousHash, DateTime timestamp, List<Transaction> transactionList)
+        public string calculateHash(Guid index, string previousHash, DateTime timestamp, Transaction[] data)
         {
             StringBuilder stringBuilder = new StringBuilder();
 
-            foreach(var item in transactionList)
+            foreach(var item in data)
             {
                 stringBuilder.Append(item);
             }
