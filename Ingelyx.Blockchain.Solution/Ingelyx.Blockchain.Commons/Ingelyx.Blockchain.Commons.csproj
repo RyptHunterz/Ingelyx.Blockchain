@@ -5,6 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Helper\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 </Project>
